@@ -1,0 +1,181 @@
+/* -------------------------Body characteristics------------------------- */
+body{
+    background-image: url("https://thumbs.dreamstime.com/b/cozy-dark-rooms-asian-hotel-artifacts-wooden-furniture-old-decorations-bangkok-thailand-big-room-designed-january-more-210392472.jpg");
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+/* -------------------------End Body characteristics------------------------- */
+
+/* -----------------------------NavBar----------------------------- */
+header{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    z-index: 99999;
+    top: 0;
+    position: fixed;
+}
+nav{
+    font-size: 18px;
+    justify-content: space-between;
+    color: #fff;
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.068);
+    font-family: 'Roboto',sans-serif;
+    height: 8vh;
+    z-index: 99;
+}
+nav h1{
+    margin-right: 750px;
+    margin-left: 70px;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ol{
+    list-style: none;
+    display: none;
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+nav ul li:hover ol{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.296);
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.068);
+}
+nav ol{
+    position: absolute;
+    background-color:white;
+    color:grey;
+    overflow: visible;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.068);
+}
+nav ul li:hover{
+    color: #892174;
+}
+/* -----------------------------NavBar----------------------------- */
+
+main{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* -----------------------------heading3 + containers : Meals , Drinks and Sweets----------------------------- */
+.heading3{
+    text-decoration: none;
+    color: #be862c;
+    font-size: 40px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+/* -----------------------------End heading3 + container----------------------------- */
+
+
+img{
+    border-radius: 15px;
+    padding: 5px;
+    height: 250px;
+    width: 400px;
+    object-fit: cover; /* the image cover the container parent */
+}
+
+
+/* -----------------------------box characteristics----------------------------- */
+.box{
+    position: relative;
+    margin: 64px 16px;
+}
+h3{
+    font-size: 25px;
+    padding-right: 50px;
+}
+.js{
+    position: absolute;
+    top: -250px; 
+    left: 48px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    visibility: hidden;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+p{
+    text-align: center;
+    position: absolute;
+    bottom: 57.6px;
+    left: 32px;
+    width: 75%;
+    color: #fff;
+    visibility: hidden;
+}
+
+/* ----------hoovering the box---------- */
+.box:hover .js{
+    visibility: visible;
+}
+.box:hover p{
+    visibility: visible;
+}
+
+.box:hover img{
+    filter: grayscale(100%) brightness(50%);
+}
+/* ---------End hoovering the box--------- */
+/* -----------------------------End box characterisctics----------------------------- */
+
+/* -----------------------------delete button----------------------------- */
+.delete{
+    height: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+/* -----------------------------End delete button----------------------------- */
+
+
+/* -----------------------------like button----------------------------- */
+.like{
+    height: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* -----------------------------End like button----------------------------- */

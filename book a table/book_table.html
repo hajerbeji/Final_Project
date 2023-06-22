@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link the css file to the html file :  -->
+    <link rel="stylesheet" href="book_table.css">
+
+    <!--Preconnect to google fonts : -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- link for the font family : 'Roboto' :  -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Book a table</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Restaurant</h1>
+            <ul>
+                <li><a href="../index.html">About us</a></li>
+                <li>
+                    <a>Menu</a>
+                    <ol>
+                        <li><a href="../menu/meals/meals.html">Meals</a></li>
+                        <li><a href="../menu/sweets/sweets.html">Sweets</a></li>
+                        <li><a href="../menu/drinks/drinks.html">Drinks</a></li>
+                    </ol>
+                   
+                </li>
+                <li><a href="../customers view/customers.html">customers view</a></li>
+                <li><a href="../book a table/book_table.html">Book a table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- ----------------------------section : form ---------------------------- -->
+        <div class="booking">
+            <h1 class="heading2">Book a table</h1>
+            <form>
+                <input type="text" placeholder="Name" class="name">
+                <input type="tel" placeholder="Phone Number" class="phone_number">
+                <input  type="date" placeholder="Date">
+                <input type="time" placeholder="Time">
+                <input type="number" min="1" placeholder="Number Of Persons" class="persons">
+                <textarea placeholder="Message" cols="30" rows="5" class="message"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+        <!-- ----------------------------End section : form ---------------------------- -->
+
+    </main>
+
+    <!-- link the js file to the html file -->
+    <script src="book_table.js"></script>
+
+</body>
+</html>
